@@ -1,5 +1,9 @@
 #include "variable.h"
 
+
+
+
+
  void main(void)
 {
  System_Init();

@@ -68,29 +68,28 @@ void delay_ms(int ms)//ms延时函数
 }
 void System_Init()
 {
-  BLE_Init(); //引脚初始化
+//  BLE_Init(); //引脚初始化
   LcdInit();      //液晶初始化
-  USART3_Config();//初始化USART3 TIM3 蓝牙引脚初始化
+//  USART3_Config();//初始化USART3 TIM3 蓝牙引脚初始化
   USART1_Config();//usart1
-  Reed_Switch_Init(); //干簧管引脚初始化
-  ValveInit();  //阀门初始化
-  rtc_Init();  //设置RTC唤醒中断 1S
-  Calendar_Init();//rtc日历初始化
+//  Reed_Switch_Init(); //干簧管引脚初始化
+ // ValveInit();  //阀门初始化
+//  rtc_Init();  //设置RTC唤醒中断 1S
+//  Calendar_Init();//rtc日历初始化
   //Adc_Init();    //adc初始化
-  ValveControl_Close_User();
-  Reset_Detection();
+//  ValveControl_Close_User();
+//  Reset_Detection();
   Wait_Oparet = (FAMEN_MAINTAIN1 | FAMEN_MAINTAIN2); 
   Show_Flag |= (0x01);//初次上电及复位显示
   BLE_Flag = BLE_DISCONNECT;
   Famen_Flag = FAMEN_CLOSE;
-  RTC_GetDate(RTC_Format_BIN, &RTC_DateStr); //Check_Date检测天数初始化
+//  RTC_GetDate(RTC_Format_BIN, &RTC_DateStr); //Check_Date检测天数初始化
   Check_Date = RTC_DateStr.RTC_Date; 
   Check_Month = RTC_DateStr.RTC_Month;
-  power_down_recover();
+//  power_down_recover();
   halt_flag =0;
   if(Account_Flag  == 0)
   {Handle_Mode = MANAGE_MODE;}
   enableInterrupts();   //开启中断
-  BLE_Rest_Break();//蓝牙断开
-  u1_printf("OK...\n");
+
 }
