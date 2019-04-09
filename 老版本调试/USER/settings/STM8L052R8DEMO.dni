@@ -1,0 +1,97 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=543797184
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[CodeCoverage]
+Enabled=_ 0
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[Breakpoints2]
+Bp0=_ 1 "STD_CODE2" "{$PROJ_DIR$\..\HARDWARE\RTC\rtc.c}.150.7" 0 0 1 "" 0 ""
+Bp1=_ 1 "STD_CODE2" "{$PROJ_DIR$\main.c}.50.7" 0 0 1 "" 0 ""
+Count=2
+[Interrupts]
+Enabled=1
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[Trace1]
+Enabled=0
+ShowSource=1
+[Simulator]
+Freq=16000000
+[array_types]
+Fmt0=uint8_t[5]	1	0
+[watch_formats]
+Fmt0={W}1:return_decrypt_array	0	1
+[DataSample]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\..\加入协议4}.113.5" 0 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{$PROJ_DIR$\..\HARDWARE\BLE}.104.1" 0 0 0 0 "" 0 ""
+Bp2=_ "STD_CODE" "{$PROJ_DIR$\..\HARDWARE\BLE}.104.1" 0 0 0 0 "" 0 ""
+Bp3=_ "STD_CODE" "{$PROJ_DIR$\..\..\Version10}.124.2" 0 0 0 0 "" 0 ""
+Bp4=_ "STD_CODE" "{$PROJ_DIR$\stm8l15x_it.c}.287.6" 1 0 0 0 "" 0 ""
+Bp5=_ "STD_CODE" "{$PROJ_DIR$\stm8l15x_it.c}.214.7" 1 0 0 0 "" 0 ""
+Count=6
+[Aliases]
+A0=_ "C:\Users\prepare\Desktop\Version2\HARDWARE\EEPROM\eeprom.c" ""
+A1=_ "C:\Users\prepare\Desktop\Version2\HARDWARE\ENCRPYT\encrpyt.c" ""
+A2=_ "C:\Users\prepare\Desktop\Version2\STM8L15x_StdPeriph_Driver\src\stm8l15x_adc.c" ""
+A3=_ "C:\Users\prepare\Desktop\Version2\STM8L15x_StdPeriph_Driver\src\stm8l15x_clk.c" ""
+A4=_ "C:\Users\prepare\Desktop\Version2\STM8L15x_StdPeriph_Driver\src\stm8l15x_exti.c" ""
+A5=_ "C:\Users\prepare\Desktop\Version2\STM8L15x_StdPeriph_Driver\src\stm8l15x_gpio.c" ""
+A6=_ "C:\Users\prepare\Desktop\Version2\STM8L15x_StdPeriph_Driver\src\stm8l15x_rtc.c" ""
+A7=_ "C:\Users\prepare\Desktop\Version2\STM8L15x_StdPeriph_Driver\src\stm8l15x_tim3.c" ""
+A8=_ "C:\Users\prepare\Desktop\Version2\STM8L15x_StdPeriph_Driver\src\stm8l15x_usart.c" ""
+A9=_ "D:\项目\STM8资料\STM8资料\项目程序stm8\Version6\HARDWARE\ENCRPYT\encrpyt.c" ""
+A10=_ "D:\项目\STM8资料\STM8资料\项目程序stm8\Version6\USER\main.c" ""
+Count=11
+SuppressDialog=0
+[DebuggerSettings]
+DisableInterruptsWhenStepping=0
