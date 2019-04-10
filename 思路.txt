@@ -1,2 +1,19 @@
 string process
 1. recvice data
+2.判断数据类型
+3.处理
+
+client命令
+AT+NNMI=1
++NNMI:5,48656C6C6F
+
+sscanf(recv_buf, "%[^:]:%d,%s", cmd,&len, data);//将数据提取出来
+
+
+for(int i=0;i<len; i++)//字符串转hex
+{
+	sscanf(data[i*2],"%02x",data_hex[i]);
+}
+
+sscanf(data, "%2x", type);
+data[0]
