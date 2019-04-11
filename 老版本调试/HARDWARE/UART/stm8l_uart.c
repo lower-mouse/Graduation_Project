@@ -195,7 +195,7 @@ void u1_printf(char* fmt,...)
       USART_GetFlagStatus(USART1,USART_FLAG_TC);
       USART_SendData8(USART1,Usart1_SendBuf[j]);
       while(USART_GetFlagStatus(USART1,USART_FLAG_TC)==RESET); 
-    } 
+    }
 }
 
 void u3_printf(char* fmt,...)  

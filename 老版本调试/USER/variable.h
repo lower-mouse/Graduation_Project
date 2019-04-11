@@ -15,6 +15,7 @@
 #include  "encrpyt.h"
 #include <math.h>
 #include "ble.h"
+#include "bc95.h"
 //干簧管A端口位置定义
 #define reed_switch_A_GPIO_TypeDef GPIOF
 #define reed_switch_A_GPIO_PIN GPIO_Pin_7
