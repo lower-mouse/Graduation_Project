@@ -25,3 +25,5 @@ case TYPE_5://查询 余额	 将余额存入设备，并将余额上报，LCD显示余额
 case TYPE_6://查询 用水量  LCD显示用水量，并将用水量上报
 case default:
 }
+
+
