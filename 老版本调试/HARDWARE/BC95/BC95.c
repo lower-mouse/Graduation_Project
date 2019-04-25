@@ -3,10 +3,13 @@
 
 
 #define SEND_MAX 200
+
+
+
 //∑¢ÀÕ√¸¡Ó
 int BcSendCmd(char *cmd)
 {
-    u1_printf("%s", cmd);
+    u1_printf("%s\n\r", cmd);
 }
 
 
@@ -38,6 +41,8 @@ int BcSendData(int len, char *data)//AT+NMGS=<length>,<data>
       while(USART_GetFlagStatus(USART1,USART_FLAG_TC)==RESET); 
     }
 }
+
+
 
 
 
